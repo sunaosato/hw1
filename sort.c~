@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include "sort.h"
-/*#include <string.h>
+#include <string.h>
 
 char sort(char* str2){
   int i ,j,len = strlen(str2);
@@ -18,21 +17,4 @@ char sort(char* str2){
   }
 
     printf("%s\n",str2);
-    }*/
-
-int main(){
-
-  char str[20];
-  //  FILE* fp;
-
-  // fp = fopen("/usr/share/dict/words","r");
-  
-  printf("Please enter the 16 characters.\n");
-  scanf("%s",str);
-
-  char str3 = sort(str);
-
- 
-
-  return 0;
 }
