@@ -1,11 +1,17 @@
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 #include"sort.h"
 
 char sort(char* str2){
-  int i ,j,len = strlen(str2);
+  int i ,j,k,len = strlen(str2);
   char a;
   
+  for(k=0;k < len;k++){
+    str2[k]=tolower(str2[k]);
+  }
+  
+  if(len > 1){
   for(i = 0; i < len;i++){
     for(j = i+1;j < len;j++){
 
@@ -17,5 +23,8 @@ char sort(char* str2){
     }
   }
 
-      printf("%s\n",str2);
+      printf("sort:%s\n",str2);
+  }
+
+
 }
