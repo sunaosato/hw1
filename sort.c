@@ -3,11 +3,9 @@
 #include <ctype.h>
 #include"sort.h"
 
-char sort(char* str2){
+void sort(char* str2){
   int i ,j,k,len = strlen(str2);
   char a;
-
-  printf("%d\n",len);
   
     for(k=0;k < len;k++){
     str2[k]=tolower(str2[k]);
@@ -26,7 +24,7 @@ char sort(char* str2){
       }
     }
 
-    printf("sort:%s\n",str2);
+    //  printf("sort:%s\n",str2);
 }
 
 

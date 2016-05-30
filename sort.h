@@ -1,2 +1,2 @@
-char sort(char* str2);
-char compare(char* str3);
+void sort(char* str2);
+void compare(char* str3);
