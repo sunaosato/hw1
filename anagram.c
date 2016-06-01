@@ -14,6 +14,9 @@ int main(){
   printf("Please enter the 16 characters.\n");
   scanf("%s",str);
 
+  int len = strlen(str);
+
+
   sort(str);
   // printf("sort:%s\n",str);
  
